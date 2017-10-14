@@ -4,6 +4,9 @@ sudo: false
 go:
     - 1.x
 
+before_install:
+    - go get -u github.com/golang/lint/golint
+
 script:
     - find . -name "*.go" | grep -v "vendor" | xargs gofmt -d
     - go list ./... | grep -v "vendor" | sed 's/^github.com\/cloverstd\/parse-string-argv//' | sed 's/^\///' | xargs -I '{p}' -n1 go tool vet -printfuncs "Info,Infof,Debug,Debugf,Warn,Warnf" {p}
