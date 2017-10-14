@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cloverstd/parse-string-argv.svg?branch=master)](https://travis-ci.org/cloverstd/parse-string-argv) [![Go Report Card](https://goreportcard.com/badge/github.com/cloverstd/parse-string-argv)](https://goreportcard.com/report/github.com/cloverstd/parse-string-argv) [![codecov](https://codecov.io/gh/cloverstd/parse-string-argv/branch/master/graph/badge.svg)](https://codecov.io/gh/cloverstd/parse-string-argv)
+
 ## Introduction
 
 The parse-string-argv package can parse string cmd to argv list like os.Argv, and you can use [flag](https://golang.org/pkg/flag/) or other flag parse library like [pflag](https://github.com/spf13/pflag).
